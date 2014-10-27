@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Layout and Picture Element - Ex 3</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    
+    <body>
+        <ul>
+            <li id="img1">
+                <div class="banner"></div>
+            </li>
+        </ul>
+        <div class="wrapper">
+
+        <section class="col-container clearfix">
+            <h1>Layout and Picture Elements</h1>
+            <p><strong>Task</strong>: Create a flexible grid that substitues different images at different breakpoints.</p>
+            <p><strong>Requirements</strong>:</p>
+            <hr>
+            <pre>
+
+            // Layout Requirements
+
+            The starting layout should be single column up to 600px wide.
+
+            At 600px wide the layout should rearrange into two columns.
+
+            At 1024px wide the layout should rearrange into it's final layout of three columns.
+
+            If the screensize is larger than 1024px the layout should stay 1024px wide and stay centered.
+
+
+            // Picture Requirements
+
+            340px
+            400px
+            600px
+            512px
+
+            Up to 400px wide the picture src should be - http://placehold.it/400x400
+
+            From 400px to 600px the picture src should be - http://placehold.it/600x600
+
+            From 600px to 800px the picture src should be - http://placehold.it/400x400
+
+            From 800px to 1020px the picture src should be - http://placehold.it/512x512
+
+            At 1024px the picture scr should be -  http://placehold.it/340x340
+
+            The Fallback should be 600px - http://placehold.it/600x600
+            </pre>
+        </section>
+
+        <div class="wrapper">
+            <ul>
+                <!--Picture #1-->
+                <li class="pic">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:400px) and (max-width: 599px)" srcset="http://www.fillmurray.com/600/600">
+                        <source media="(min-width:600px) and (max-width: 800px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:800px) and (max-width: 1023px)" srcset="http://www.fillmurray.com/512/512">
+                        <source media="(min-width: 1024px)" srcset="http://www.fillmurray.com/340/340">
+                        <img src="http://www.fillmurray.com/600/600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                </li>
+                
+                 <li class="pic">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:400px) and (max-width: 599px)" srcset="http://www.fillmurray.com/600/600">
+                        <source media="(min-width:600px) and (max-width: 800px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:800px) and (max-width: 1023px)" srcset="http://www.fillmurray.com/512/512">
+                        <source media="(min-width: 1024px)" srcset="http://www.fillmurray.com/340/340">
+                        <img src="http://www.fillmurray.com/600/600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                </li>
+                
+                 <li class="pic">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:400px) and (max-width: 599px)" srcset="http://www.fillmurray.com/600/600">
+                        <source media="(min-width:600px) and (max-width: 800px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:800px) and (max-width: 1023px)" srcset="http://www.fillmurray.com/512/512">
+                        <source media="(min-width: 1024px)" srcset="http://www.fillmurray.com/340/340">
+                        <img src="http://www.fillmurray.com/600/600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                </li>
+                
+                 <li class="pic">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:400px) and (max-width: 599px)" srcset="http://www.fillmurray.com/600/600">
+                        <source media="(min-width:600px) and (max-width: 800px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:800px) and (max-width: 1023px)" srcset="http://www.fillmurray.com/512/512">
+                        <source media="(min-width: 1024px)" srcset="http://www.fillmurray.com/340/340">
+                        <img src="http://www.fillmurray.com/600/600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                </li>
+                
+                 <li class="pic">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:400px) and (max-width: 599px)" srcset="http://www.fillmurray.com/600/600">
+                        <source media="(min-width:600px) and (max-width: 800px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:800px) and (max-width: 1023px)" srcset="http://www.fillmurray.com/512/512">
+                        <source media="(min-width: 1024px)" srcset="http://www.fillmurray.com/340/340">
+                        <img src="http://www.fillmurray.com/600/600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                </li>
+                
+                 <li class="pic">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:400px) and (max-width: 599px)" srcset="http://www.fillmurray.com/600/600">
+                        <source media="(min-width:600px) and (max-width: 800px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:800px) and (max-width: 1023px)" srcset="http://www.fillmurray.com/512/512">
+                        <source media="(min-width: 1024px)" srcset="http://www.fillmurray.com/340/340">
+                        <img src="http://www.fillmurray.com/600/600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                </li>
+                
+                 <li class="pic">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:400px) and (max-width: 599px)" srcset="http://www.fillmurray.com/600/600">
+                        <source media="(min-width:600px) and (max-width: 800px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:800px) and (max-width: 1023px)" srcset="http://www.fillmurray.com/512/512">
+                        <source media="(min-width: 1024px)" srcset="http://www.fillmurray.com/340/340">
+                        <img src="http://www.fillmurray.com/600/600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                </li>
+                
+                 <li class="pic">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:400px) and (max-width: 599px)" srcset="http://www.fillmurray.com/600/600">
+                        <source media="(min-width:600px) and (max-width: 800px)" srcset="http://www.fillmurray.com/400/400">
+                        <source media="(min-width:800px) and (max-width: 1023px)" srcset="http://www.fillmurray.com/512/512">
+                        <source media="(min-width: 1024px)" srcset="http://www.fillmurray.com/340/340">
+                        <img src="http://www.fillmurray.com/600/600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                </li>
+             </ul>
+        </div>
+
+        <footer class="footer">
+            <p id="foot">Copyright MySite 1954<p>
+        </footer>
+            
+    </body>
+</html>
